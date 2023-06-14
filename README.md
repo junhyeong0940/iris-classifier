@@ -12,6 +12,7 @@ class Sample:
     
 이 코드에서 @dataclass 데코레이터를 사용해 제공된 속성 타입 힌트로부터 클래스를 생성했다.
 
+
 @dataclass
 class KnownSample(Sample):
     species: str
