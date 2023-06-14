@@ -3,6 +3,8 @@
 이 프로젝트에서 @dataclass 정의를 이용해 디자인을 살펴 보았다.
 
 @dataclass
+
+
 class Sample:
 
     sepal_length: float
@@ -14,19 +16,24 @@ class Sample:
 
 
 @dataclass
+
 class KnownSample(Sample):
+
     species: str
 
 
 
 @dataclass
+
 class TestingKnownSample(KnownSample):
+
     classification: Optional[str] = None
 
 
 @dataclass
 
 class TrainingKnownSample(KnownSample):
+
     pass
 
 
