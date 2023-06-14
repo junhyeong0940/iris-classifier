@@ -4,6 +4,7 @@
 
 @dataclass
 class Sample:
+
     sepal_length: float
     sepal_width: float
     petal_length: float
