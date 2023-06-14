@@ -28,7 +28,6 @@ class TestingKnownSample(KnownSample):
 
 @dataclass
 class TrainingKnownSample(KnownSample):
-    """Cannot be classified -- there's no classification instance variable available."""
 
     pass
 
@@ -39,7 +38,6 @@ class UnknownSample(Sample):
 
 
 class Distance:
-    """Abstact definition of a distance computation"""
 
     def distance(self, s1: Sample, s2: Sample) -> float:
         raise NotImplementedError
@@ -47,14 +45,13 @@ class Distance:
 
 @dataclass
 class Hyperparameter:
-    """A specific tuning parameter set with k and a distance algorithm"""
-
+    
     k: int
     algorithm: Distance
     data: weakref.ReferenceType["TrainingData"]
 
     def classify(self, sample: Sample) -> str:
-        """The k-NN algorithm"""
+        
         if not (training_data := self.data()):
             raise RuntimeError("No TrainingData object")
         distances: list[tuple[float, TrainingKnownSample]] = sorted(
