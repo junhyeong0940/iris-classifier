@@ -1,6 +1,6 @@
 프로젝트 설명 및 소감
 
-이 프로젝트에서 @dataclass 정이를 이용해 디자인을 살펴 보았다.
+이 프로젝트에서 @dataclass 정의를 이용해 디자인을 살펴 보았다.
 
 @dataclass
 class Sample:
