@@ -14,16 +14,19 @@ class Sample:
 
 
 @dataclass
+
 class KnownSample(Sample):
     species: str
 
 
 @dataclass
+
 class TestingKnownSample(KnownSample):
     classification: Optional[str] = None
 
 
 @dataclass
+
 class TrainingKnownSample(KnownSample):
     pass
 
@@ -31,6 +34,7 @@ class TrainingKnownSample(KnownSample):
 이 코드는 @dataclass 데코레이터로 정의딘 클래스의 인스턴스를 생성하는 방법을 보여준다.
 
 @dataclass
+
 class Hyperparameter:
 
     k: int
