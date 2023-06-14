@@ -14,13 +14,12 @@ class Sample:
 
 
 @dataclass
-
 class KnownSample(Sample):
     species: str
 
 
-@dataclass
 
+@dataclass
 class TestingKnownSample(KnownSample):
     classification: Optional[str] = None
 
