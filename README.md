@@ -1,12 +1,14 @@
 프로젝트 설명 및 소감
 
-이 프로젝트에서 @dataclass 저으이를 이용해 디자인을 살펴 보았다.
+이 프로젝트에서 @dataclass 정이를 이용해 디자인을 살펴 보았다.
+
 @dataclass
 class Sample:
     sepal_length: float
     sepal_width: float
     petal_length: float
     petal_width: float
+    
 이 코드에서 @dataclass 데코레이터를 사용해 제공된 속성 타입 힌트로부터 클래스를 생성했다.
 
 @dataclass
